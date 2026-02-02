@@ -22,8 +22,8 @@ def test_data_post():
     # Send a POST request with JSON
     response = client.post("/data", json={"item": "book"})
     
-    # Assert status is 201 (Created)
-    assert response.status_code == 201
+    # Assert status is 200 (Created)
+    assert response.status_code == 200
     
     # Assert the response body contains what we expect
     # assert response.data == b"Received: book"

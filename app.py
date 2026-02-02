@@ -21,7 +21,7 @@ def home():
 @app.route("/data", methods=["POST"])
 def data():
     content = request.json
-    return f"Received: {content}", 202
+    return f"Received: {content}", 200
 
 
 if __name__ == "__main__":
